@@ -2,7 +2,7 @@ import { Action, createStore, Store } from 'redux';
 
 import reducer from './reducer';
 
-// Storeが持つTodoにの状態を定義
+// Storeが持つTodoの状態を定義
 export interface ITodoState {
   todos: string[];
 }
