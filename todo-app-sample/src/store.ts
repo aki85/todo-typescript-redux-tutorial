@@ -13,6 +13,9 @@ export interface IRootState {
 }
 
 // importしたreducerを渡してstoreを作成
-const store: Store<ITodoState, Action> = createStore(reducer);
+const store: Store<ITodoState, Action> = createStore(
+  reducer, /* preloadedState, */
+  (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 export default store;
