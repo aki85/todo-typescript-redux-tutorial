@@ -1,18 +1,15 @@
-import { Action, createStore, Store } from 'redux';
+import { Action, createStore, Store } from 'redux'
 
-import reducer from './reducer';
+import reducer from './reducer'
 
-// Storeが持つTodoの状態を定義
 export interface ITodoState {
-  todos: string[];
+  todos: string[]
 }
 
-// 全てのStateを集約したStateを定義
 export interface IRootState {
-  todoState: ITodoState;
+  todoState: ITodoState
 }
 
-// importしたreducerを渡してstoreを作成
-const store: Store<ITodoState, Action> = createStore(reducer);
+const store: Store<ITodoState, Action> = createStore(reducer)
 
-export default store;
+export default store
