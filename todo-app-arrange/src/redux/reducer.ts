@@ -23,7 +23,6 @@ const todoReducer: Reducer<ITodoState> = (
   }
 }
 
-// 全てを集約したReducerを作成
 const reducer: Reducer<IRootState> = combineReducers({
   todoState: todoReducer
 })
