@@ -26,7 +26,7 @@ https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/
 2. todo-app-sampleを起動してみる
 
 ## step2. 記事の通り実装
-
+https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/  
 point: まずは詳しく読まずに、動くかどうかに焦点を当てて作ってみる
 
 ### チェックポイント
