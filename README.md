@@ -21,11 +21,18 @@ https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/
 
 ## step1. 環境の用意
 
+### チェックポイント
 1. node, yarnをinstallし実行できるようにする
 2. todo-app-sampleを起動してみる
 
 ## step2. 記事の通り実装
 
+point: まずは詳しく読まずに、動くかどうかに焦点を当てて作ってみる
+
+### チェックポイント
+1. yarn startでブラウザから確認できるようにする
+2. TodoComponent.tsx, App.tsxを書いた段階で、デフォルト値でtodoリストが表示される
+3. 最後まで行くと、todoリストに自分でtodoを追加できる
 
 
 ## step3. 実装したものを改造
