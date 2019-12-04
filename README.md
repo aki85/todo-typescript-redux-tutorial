@@ -12,3 +12,6 @@ https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/
     * https://nodejs.org/ja/download/
   * バージョンを変える必要がある場合
     * https://qiita.com/mame_daifuku/items/373daf5f49ee585ea498
+    
+* yarn: ^1.9
+  * https://yarnpkg.com/lang/ja/docs/install/#mac-stable
