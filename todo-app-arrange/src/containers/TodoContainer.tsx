@@ -2,9 +2,9 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { Action, Dispatch } from 'redux'
 
-import { todoActionCreator } from './action'
-import { IRootState } from './store'
-import TodoComponent from './TodoComponent'
+import { todoActionCreator } from '../redux/action'
+import { IRootState } from '../redux/store'
+import TodoComponent from '../components/TodoComponent'
 
 interface IStateToProps {
   todos: string[]

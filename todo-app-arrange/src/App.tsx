@@ -1,9 +1,8 @@
-// App.tsx
 import * as React from 'react'
 import { Provider } from 'react-redux'
 
-import store from './store'
-import TodoContainer from './TodoContainer'
+import store from './redux/store'
+import TodoContainer from './containers/TodoContainer'
 
 class App extends React.Component {
   public render() {
