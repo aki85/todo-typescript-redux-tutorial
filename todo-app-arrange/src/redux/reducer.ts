@@ -1,7 +1,8 @@
 import { combineReducers, Reducer } from 'redux'
 
-import { IAddTodoAction, TodoAction, TodoActionType } from './action'
-import { IRootState, ITodoState } from './store'
+import { TodoAction, TodoActionType } from './action'
+import { ITodoState } from './interfaces'
+import { IRootState } from './store'
 
 const initTodoState: ITodoState = {
   todos: []
@@ -12,11 +13,17 @@ const todoReducer: Reducer<ITodoState> = (
   action: TodoAction
 ): ITodoState => {
   switch (action.type) {
-    case TodoActionType.ADD_TODO:
-      const addTodoAction: IAddTodoAction = action
+    case TodoActionType.LOAD_TODO:
+      return state
+    case TodoActionType.SET_TODO:
       return {
         ...state,
-        todos: state.todos.concat([addTodoAction.payload.todo])
+        todos: action.payload.todos
+      }
+    case TodoActionType.ADD_TODO:
+      return {
+        ...state,
+        todos: state.todos.concat([action.payload.todo])
       }
     default:
       return state

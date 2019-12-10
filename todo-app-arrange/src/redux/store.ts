@@ -2,9 +2,7 @@ import { Action, createStore, Store } from 'redux'
 
 import reducer from './reducer'
 
-export interface ITodoState {
-  todos: string[]
-}
+import { ITodoState } from './interfaces'
 
 export interface IRootState {
   todoState: ITodoState

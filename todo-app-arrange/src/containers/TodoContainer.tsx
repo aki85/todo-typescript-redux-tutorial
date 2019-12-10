@@ -11,28 +11,8 @@ interface IStateToProps {
 }
 
 interface IDispatchToProps {
-  addTodo: (todo: string) => void
-}
-
-type IProps = IStateToProps & IDispatchToProps
-
-/* tslint:disable:jsx-no-lambda */
-class TodoContainer extends React.Component<IProps, {}> {
-  constructor(props: IProps) {
-    super(props)
-  }
-
-  public render(): JSX.Element {
-    const { todos } = this.props
-    return (
-      <TodoComponent todos={todos} onClickAddButton={this.onClickAddButton} />
-    )
-  }
-
-  private onClickAddButton = (todo: string): void => {
-    const { addTodo } = this.props
-    addTodo(todo)
-  }
+  addTodo: (todo: string) => void,
+  loadTodo: () => void
 }
 
 const mapStateToProps = (state: IRootState): IStateToProps => {
@@ -46,7 +26,33 @@ const mapDispatchToProps = (dispatch: Dispatch<Action>): IDispatchToProps => {
   return {
     addTodo: (todo: string) => {
       dispatch(todoActionCreator.addTodoAction(todo))
+    },
+    loadTodo: () => {
+      dispatch(todoActionCreator.loadTodoAction(dispatch))
     }
+  }
+}
+
+type IProps = IStateToProps & IDispatchToProps
+
+/* tslint:disable:jsx-no-lambda */
+class TodoContainer extends React.Component<IProps, {}> {
+  constructor(props: IProps) {
+    super(props)
+    const { loadTodo } = this.props
+    loadTodo()
+  }
+
+  public render(): JSX.Element {
+    const { todos } = this.props
+    return (
+      <TodoComponent todos={todos} onClickAddButton={this.onClickAddButton} />
+    )
+  }
+
+  private onClickAddButton = (todo: string): void => {
+    const { addTodo } = this.props
+    addTodo(todo)
   }
 }
 
