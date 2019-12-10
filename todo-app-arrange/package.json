@@ -2,6 +2,7 @@
   "name": "todo-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aki85.github.io/todo-ts",
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.4.1",
@@ -18,7 +19,8 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
@@ -29,6 +31,7 @@
     "@types/react-router-dom": "^5.1.3",
     "@types/redux": "^3.6.0",
     "@types/uuid": "^3.4.6",
+    "gh-pages": "^2.1.1",
     "typescript": "^3.7.2"
   }
 }
