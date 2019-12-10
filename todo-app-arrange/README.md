@@ -1,7 +1,7 @@
 # 概要
 
-以下の記事を元に作成したTODOリストです。  
-https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/
+このリポジトリの公開用リポジトリです。  
+https://github.com/aki85/todo-typescript-redux-tutorial
 
 ## 環境
 * nodejs: ^12.x

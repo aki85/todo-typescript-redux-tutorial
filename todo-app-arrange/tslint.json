@@ -11,6 +11,14 @@
     "ordered-imports": [false],
     "object-literal-sort-keys": [false],
     "no-console": [false],
-    "no-shadowed-variable": [false]
+    "no-shadowed-variable": [false],
+    "variable-name": {
+      "options": [
+        "ban-keywords",
+        "check-format",
+        "allow-leading-underscore",
+        "allow-pascal-case"
+      ]
+    }
   }
 }
