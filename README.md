@@ -1,5 +1,6 @@
 # 概要
 typescript + redux で todoリストを作ってみよう！  
+で、reactを学ぼう！
   
 https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/  
   
@@ -27,7 +28,7 @@ https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/
 
 ## step2. 記事の通り実装
 https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/  
-point: まずは詳しく読まずに、動くかどうかに焦点を当てて作ってみる
+tips: まずは詳しく読まずに、動くかどうかに焦点を当てて作ってみよう！
 
 ### チェックポイント
 1. yarn startでブラウザから確認できるようにする
@@ -36,6 +37,8 @@ point: まずは詳しく読まずに、動くかどうかに焦点を当てて�
 
 
 ## step3. 実装したものを改造
+
+tips: チェックポイント1が難しそうであれば分岐へ進んでみよう！
 
 ### チェックポイント
 1. 以下のどれかを選んで1つ作ってみる
@@ -48,8 +51,20 @@ point: まずは詳しく読まずに、動くかどうかに焦点を当てて�
 * APIと通信してみる
 * 見た目をいい感じにしてみる
 
+### 分岐
+
+tips: 分岐の2まで行ければ大体OK！
+
+1. まずはreactのみだとどうなるかをみてみる
+https://github.com/aki85/todo
+2. 気になるところを調べてみる
+3. todo-app-arrangeと比べてみる
 
 ## step4. 気になる知識の追求
 
+tips: 詳しい人に聞いたり、googleに聞いたりしよう！
+
 ### チェックポイント
 1. 追加したい機能もしくは、知りたいコードを見つける
+2. 調べる
+3. 作る
