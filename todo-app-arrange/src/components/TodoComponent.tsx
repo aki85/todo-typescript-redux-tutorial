@@ -72,6 +72,7 @@ export default class extends React.Component<IProps, IState> {
     const { onClickAddButton } = this.props
     const { title } = this.state
     onClickAddButton(title)
+    this.setState({ title: '' })
   }
 
   private onClickRemoveButton = (index: number) => {
