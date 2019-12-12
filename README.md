@@ -28,8 +28,8 @@ https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/
 
 ## step2. 記事の通り実装
 https://nametake.github.io/posts/2018/12/05/typescript-react-redux-tutorial/  
-tips: まずは詳しく読まずに、動くかどうかに焦点を当てて作ってみよう！
-
+tips: まずは詳しく読まずに、動くかどうかに焦点を当てて作ってみよう！  
+tips: 作れなかったらstep3の分岐に進んでみよう！  
 ### チェックポイント
 1. yarn startでブラウザから確認できるようにする
 2. TodoComponent.tsx, App.tsxを書いた段階で、デフォルト値でtodoリストが表示される
@@ -68,3 +68,10 @@ tips: 詳しい人に聞いたり、googleに聞いたりしよう！
 1. 追加したい機能もしくは、知りたいコードを見つける
 2. 調べる
 3. 作る
+
+## まとめ
+[このリポジトリ(難)](https://github.com/aki85/todo-typescript-redux-tutorial)や、[このリポジトリ(易)](https://github.com/aki85/todo)を読んだり動かしたりしてみると、reactでどんなことができるのかがわかるかもしれません！
+
+是非、ローカルにクローンして色々試してみてください！
+
+質問などあれば[twitter](https://twitter.com/akikogarasi)までどうぞー
